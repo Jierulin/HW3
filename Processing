@@ -1,0 +1,23 @@
+function JieruPatch(x, y) {
+  noFill();
+  stroke(238);
+  
+  rect(x, y, 100, 100);
+  
+  fill(255,80,80)
+  ellipse (x+50,y+50,100,100);
+  colorMode(HSB)
+ var a=0, b=123
+  while(a<360){
+     stroke(a, 100, 100);
+ 
+  line(x+b-120,y+b-120,x+100,y);
+    line(x,y+100,x+b-120,y+b-120)
+   a=a+36
+    b=b+10
+    
+   }
+  }
+background(255);
+JieruPatch((width-100)/2, (height-100)/2);
+JieruPatch(0,0)
